@@ -10,6 +10,7 @@
     "graphql-tag": "^1.2.4",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.1",
+    "pouchdb-browser": "^6.1.2",
     "react": "^15.4.1",
     "react-apollo": "^0.11.1",
     "react-dom": "^15.4.1"
