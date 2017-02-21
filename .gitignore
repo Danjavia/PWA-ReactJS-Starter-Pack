@@ -17,3 +17,6 @@ npm-debug.log
 
 # environment
 src/config/config.dev.json
+
+# files
+src/**/*.css
