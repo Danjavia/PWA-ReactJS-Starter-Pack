@@ -1,8 +1,21 @@
+/**
+ * External Resources
+ **/
 import React, { Component } from 'react';
-import './App.css';
 
-class App extends Component {
-  
+/**
+ * Internal Resources
+ **/
+import './Sample.css';
+
+/**
+ * Sample class definition
+ **/
+class Sample extends Component {
+
+  /**
+   * constructor
+   **/
   constructor() {
     super();
     this.state = {
@@ -16,11 +29,17 @@ class App extends Component {
       this.update(e.dataTransfer.files);
     }
   }
-  
+
+  /**
+   * handleUploads
+   **/
   handleUploads(e) {
     this.update(e.target.files);
   }
-  
+
+  /**
+   * update
+   **/
   update(moreFiles) {
     const newFiles = Array.from(moreFiles);
     if (!newFiles) {
@@ -30,7 +49,10 @@ class App extends Component {
     this.setState({files});
     this.process(files);
   }
-  
+
+  /**
+   * process
+   **/
   process(files) {
     const data = this.state.data.slice();
     files.forEach((f, idx) => {
@@ -44,7 +66,11 @@ class App extends Component {
       }
     });
   }
-  
+
+  /**
+   * render
+   * @return {ReactElement} Markup
+   **/
   render() {
     return (
       <div className="App">
@@ -63,6 +89,9 @@ class App extends Component {
   }
 }
 
+/**
+ * Uploads component
+ **/
 const Uploads = ({onChange}) =>
   <div>
     <label htmlFor="files" className="Uploads-select">Select files...</label>
@@ -76,7 +105,9 @@ const Uploads = ({onChange}) =>
     />
   </div>;
 
-
+/**
+ * Results component
+ **/
 const Results = ({files, data}) => {
   if (files.length === 0) {return <span/>;}
   return (
@@ -100,6 +131,9 @@ const Results = ({files, data}) => {
       </tbody>
     </table>
   );
-}
+};
 
-export default App;
+/**
+ * Export class
+ **/
+export default Sample;
