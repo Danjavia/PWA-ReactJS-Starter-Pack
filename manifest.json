@@ -1,6 +1,6 @@
 {
-  "short_name": "starterpack",
-  "name": "starterpack",
+  "short_name": "StarterPack",
+  "name": "Starter Pack",
   "icons": [
     {
       "src": "icon.png",
@@ -8,7 +8,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/index.html?origin=pwa",
   "display": "standalone",
   "background_color": "#222",
   "theme_color": "#333"
