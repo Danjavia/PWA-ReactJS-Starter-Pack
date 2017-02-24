@@ -8,8 +8,8 @@ import { IndexRoute, Route } from 'react-router';
  * Internal Resources
  **/
 import App from '../components/App/App';
-import Sample from '../components/Sample/Sample';
-import NotFound from '../components/NotFound/NotFound';
+import Sample from '../pages/Sample/Sample';
+import NotFound from '../pages/NotFound/NotFound';
 
 /**
  * Router class definition.
