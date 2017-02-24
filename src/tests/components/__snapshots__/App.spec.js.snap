@@ -1,0 +1,4 @@
+exports[`AppComponent renders a snapshot 1`] = `
+<div
+  className="container" />
+`;

@@ -7,14 +7,23 @@
   },
   "dependencies": {
     "apollo-client": "^0.8.7",
+    "enzyme": "^2.7.1",
     "graphql-tag": "^1.2.4",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.1",
+    "pouchdb-browser": "^6.1.2",
     "react": "^15.4.1",
     "react-apollo": "^0.11.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.2",
+    "react-test-renderer": "^15.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && cp manifest.json build/ && sw-precache --root='build/' --static-file-globs='build/**/!(*map*)'",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && cp manifest.json build/ && sw-precache --root='build/' --static-file-globs='build/**/!(*map*)'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
