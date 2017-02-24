@@ -10,13 +10,14 @@ import { ApolloProvider } from 'react-apollo';
 /**
  * Internal Resources
  **/
+import { GRAPHQL_ENDPOINT } from './config/env';
 import Routes from './routes/routes';
 
 /**
  * `client`: Set apollo client connection
  **/
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'http://my-api.graphql.com' }),
+  networkInterface: createNetworkInterface({ uri: GRAPHQL_ENDPOINT }),
 });
 
 /**

@@ -46,7 +46,7 @@ It's very simple.
 
 You can deploy using [https://surge.sh](Surge.sh) cli
 
-For installing it simply run. 
+For installing it's simple to run. 
  
 ```
 yarn global add surge
@@ -62,6 +62,22 @@ Select the **build folder** and press enter.
 
 
 # Set Environment Variables
+
+Set your environment variables in *./src/config/env.js* file.
+
+This values would appear in your compiled code after run
+
+```
+// development environment
+yarn start
+```
+
+or
+
+```
+// production environment
+yarn run deploy
+```
 
 # Tests
 
