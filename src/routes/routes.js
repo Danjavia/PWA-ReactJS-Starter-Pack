@@ -8,7 +8,7 @@ import { IndexRoute, Route } from 'react-router';
  * Internal Resources
  **/
 import App from '../components/App/App';
-import Sample from '../pages/Sample/Sample';
+import HomePage from '../pages/HomePage/HomePage';
 import NotFound from '../pages/NotFound/NotFound';
 
 /**
@@ -16,7 +16,7 @@ import NotFound from '../pages/NotFound/NotFound';
  **/
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={Sample} />
+    <IndexRoute component={HomePage} />
     <Route path="*" component={NotFound} />
   </Route>
 );
