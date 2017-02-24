@@ -73,4 +73,4 @@ yarn run test
 
 # License
 
-Show License.md
+Show [LICENSE](https://github.com/Danjavia/PWA-ReactJS-Starter-Pack/blob/master/LICENSE)
