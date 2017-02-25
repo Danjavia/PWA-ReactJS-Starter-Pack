@@ -4,6 +4,8 @@ Hi! This repository was made thinking in developers.
 
 Within you can find many useful resources for starting to create a PWA application with ReactJS and GraphQL.
 
+![PWA lighthouse](http://imgh.us/Screen_Shot_2017-02-24_at_8.37.33_PM.png)
+
 # Included Features
 
 - ReactJS
