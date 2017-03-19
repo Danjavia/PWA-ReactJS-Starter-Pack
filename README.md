@@ -63,7 +63,14 @@ Select the **build folder** and press enter.
 
 # Set Environment Variables
 
-Set your environment variables in *./src/config/env.js* file.
+Set your environment variables within .env.<enviroment> files using the **REACT_APP_** prefix for your environment variables
+
+e.g.
+
+```
+//.env.local
+REACT_APP_MY_CUSTOM_ENV_VAR=https://awesome.site
+```
 
 This values would appear in your compiled code after run
 
@@ -76,8 +83,17 @@ or
 
 ```
 // production environment
-yarn run deploy
+yarn run build:production
 ```
+
+or
+
+```
+// staging environment
+yarn run build:staging
+```
+
+You can use your env var using **process.env.REACT_APP_MY_CUSTOM_ENV_VAR** in your project.
 
 # Tests
 
