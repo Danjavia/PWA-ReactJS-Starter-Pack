@@ -11,7 +11,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 /**
  * Internal Resources
  **/
-import { GRAPHQL_ENDPOINT } from './config/env';
 import Routes from './routes/routes';
 
 import './index.css';
@@ -20,7 +19,7 @@ import './index.css';
  * `client`: Set apollo client connection
  **/
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: GRAPHQL_ENDPOINT }),
+  networkInterface: createNetworkInterface({ uri: process.env.REACT_APP_GRAPHQL_ENDPOINT }),
 });
 
 /**
