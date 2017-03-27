@@ -48,7 +48,7 @@ For easy starting with GraphQL and testing this repo you can start with graphql-
 
 [![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://api.graph.cool/simple/v1/bronzeduck-lifter-162)
 
-Here is an GraphQL endpoint ready for using with the starter. It was set in your .env and .env.local files
+Here is an GraphQL endpoint ready for using with the starter. It was setted in your .env and .env.local files
 
 You can get more info about **Graphql-up** on [https://graph.cool](https://www.graph.cool/graphql-up/).
 
