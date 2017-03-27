@@ -50,7 +50,7 @@ For easy starting with GraphQL and testing this repo you can start with graphql-
 
 Here is an GraphQL endpoint ready for using with the starter. It was set in your .env and .env.local files
 
-You can get more info about Graphql-up [Here](https://www.graph.cool/graphql-up/).
+You can get more info about **Graphql-up** on [https://graph.cool](https://www.graph.cool/graphql-up/).
 
 Related starter schema is [Here](https://github.com/Danjavia/PWA-ReactJS-Starter-Pack/blob/master/blog.graphqls)
 
