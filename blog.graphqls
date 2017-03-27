@@ -1,0 +1,22 @@
+type Post {
+    id: ID!
+    title: String!
+    slug: String!
+    content: String!
+    author: User! @relation(name: "Posts")
+    tags: [Tag] @relation(name: "Tags")
+}
+
+type User {
+    id: ID!
+    name: String!
+    avatar: String!
+    posts: [Post!]! @relation(name: "Posts")
+}
+
+type Tag {
+    id: ID!
+    name: String!
+    slug: String!
+    posts: [Post!]! @relation(name: "Tags")
+}

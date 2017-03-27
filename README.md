@@ -42,6 +42,18 @@ And open [http://localhost:3000](http://localhost:3000)
 yarn run build
 ```
 
+# Starting with GraphQL
+
+For easy starting with GraphQL and testing this repo you can start with graphql-up
+
+[![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://api.graph.cool/simple/v1/bronzeduck-lifter-162)
+
+Here is an GraphQL endpoint ready for using with the starter. It was set in your .env and .env.local files
+
+You can get more info about Graphql-up [Here](https://www.graph.cool/graphql-up/).
+
+Related starter schema is [Here](https://github.com/Danjavia/PWA-ReactJS-Starter-Pack/blob/master/blog.graphqls)
+
 # Deploy Your Progressive Web Application
 
 It's very simple.
