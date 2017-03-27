@@ -46,7 +46,7 @@ yarn run build
 
 For easy starting with GraphQL and testing this repo you can start with graphql-up
 
-[![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://api.graph.cool/simple/v1/bronzeduck-lifter-162)
+[![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new/?source=https://raw.githubusercontent.com/Danjavia/PWA-ReactJS-Starter-Pack/master/blog.schema)
 
 Here is an GraphQL endpoint ready for using with the starter. It was setted in your .env and .env.local files
 
