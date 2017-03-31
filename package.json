@@ -6,7 +6,7 @@
     "sw-precache": "^4.2.3"
   },
   "dependencies": {
-    "apollo-client": "^1.0.0-rc.7",
+    "apollo-client": "^1.0.0",
     "enzyme": "^2.7.1",
     "graphql-tag": "^1.2.4",
     "material-ui": "^0.17.0",
