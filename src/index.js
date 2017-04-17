@@ -3,7 +3,8 @@
  **/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, browserHistory } from 'react-router';
+// import { Router, browserHistory } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -28,7 +29,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <MuiThemeProvider>
-      <Router history={browserHistory} routes={Routes} />
+      <Router>
+        <Routes />
+      </Router>
     </MuiThemeProvider>
   </ApolloProvider>,
   document.getElementById('root')
