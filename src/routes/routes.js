@@ -2,7 +2,7 @@
  * External libraries
  **/
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 /**
  * Internal Resources
@@ -16,7 +16,9 @@ import NotFound from '../pages/NotFound/NotFound';
  **/
 export default () => (
   <div className="container">
-    <Route exact path="/" component={HomePage} />
-    <Route path="*" component={NotFound} />
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route component={NotFound} />
+    </Switch>
   </div>
 );
