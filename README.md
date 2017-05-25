@@ -39,7 +39,7 @@ And open [http://localhost:3000](http://localhost:3000)
 # How to Build Your Project
 
 ```
-yarn run build
+yarn run build:production
 ```
 
 # Starting with GraphQL
