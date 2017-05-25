@@ -48,17 +48,17 @@ For easy starting with GraphQL and testing this repo you can start with graphql-
 
 [![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new/?source=https://raw.githubusercontent.com/Danjavia/PWA-ReactJS-Starter-Pack/master/blog.schema)
 
-Here is an GraphQL endpoint ready for using with the starter. It was setted in your .env and .env.local files
+Here is a GraphQL endpoint ready for use with the starter. It was settled in your .env and .env.local files
 
 You can get more info about **Graphql-up** on [https://graph.cool](https://www.graph.cool/graphql-up/).
 
-Related starter schema is [Here](https://github.com/Danjavia/PWA-ReactJS-Starter-Pack/blob/master/blog.graphqls)
+Related starter schema is [Here](https://github.com/Danjavia/PWA-ReactJS-Starter-Pack/blob/master/blog.schema)
 
 # Deploy Your Progressive Web Application
 
 It's very simple.
 
-You can deploy using [https://surge.sh](Surge.sh) cli
+You can deploy using [Surge.sh](https://surge.sh) cli
 
 For installing it's simple to run. 
  
@@ -111,7 +111,7 @@ You can use your env var using **process.env.REACT_APP_MY_CUSTOM_ENV_VAR** in yo
 
 # Tests
 
-This package include a sample with a little test for components. You can run it using.
+This package includes a sample with a little test for components. You can run it using.
 
 ```
 yarn run test
