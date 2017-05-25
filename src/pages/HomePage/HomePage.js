@@ -2,16 +2,17 @@
  * External Resources
  **/
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import RaisedButton from 'material-ui/RaisedButton';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
+import './HomePage.css';
 /**
  * Internal Resources
  **/
-import './HomePage.css';
+
+injectTapEventPlugin();
 
 /**
  * Sample class definition
@@ -22,7 +23,7 @@ class HomePage extends Component {
    * @property {object} muiTheme MUI integration with component
    * */
   static childContextTypes = {
-    muiTheme: React.PropTypes.object
+    muiTheme: PropTypes.object
   };
 
   /**
