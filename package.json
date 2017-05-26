@@ -1,6 +1,9 @@
 {
   "name": "starterpack",
   "version": "2.0.0",
+  "engines" : {
+    "node" : ">=6.3.0"
+  },
   "devDependencies": {
     "react-scripts": "1.0.6",
     "sw-precache": "^5.1.1"
@@ -24,9 +27,9 @@
   "scripts": {
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch",
-    "start-js": "sh -ac '. .env.local; react-scripts start'",
+    "start-js": "sh -ac '. ./.env.local; react-scripts start'",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && sh -ac '. .env.${REACT_APP_ENV}; react-scripts build' && cp manifest.json build/ && sw-precache --root='build/' --static-file-globs='build/**/!(*map*)'",
+    "build": "npm run build-css && sh -ac './.env.${REACT_APP_ENV}; react-scripts build' && cp manifest.json build/ && sw-precache --root='build/' --static-file-globs='build/**/!(*map*)'",
     "build:staging": "REACT_APP_ENV=staging npm run build",
     "build:production": "REACT_APP_ENV=production npm run build",
     "test": "react-scripts test --env=jsdom",
