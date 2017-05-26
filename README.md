@@ -48,7 +48,7 @@ For easy starting with GraphQL and testing this repo you can start with graphql-
 
 [![graphql-up](http://static.graph.cool/images/graphql-up.svg)](https://www.graph.cool/graphql-up/new/?source=https://raw.githubusercontent.com/Danjavia/PWA-ReactJS-Starter-Pack/master/blog.schema)
 
-Here is a GraphQL endpoint ready for use with the starter. It was settled in your .env and .env.local files
+Here is a GraphQL endpoint ready for using with the starter. It was settled in your .env and .env.local files
 
 You can get more info about **Graphql-up** on [https://graph.cool](https://www.graph.cool/graphql-up/).
 
